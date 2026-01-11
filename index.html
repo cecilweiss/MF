@@ -2,24 +2,25 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Forge W&F 3D - Cecil Weiss</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Cidinha</title>
     <style>
         /* Reset básico */
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212; /* Fundo Preto Fosco estilo industrial */
+            background-color: #121212; /* Fundo Preto Fosco */
             color: #ffffff;
             display: flex;
             justify-content: center;
             min-height: 100vh;
         }
 
-        /* Container principal que segura tudo (limita a largura no PC) */
+        /* Container principal */
         .card-container {
             width: 100%;
-            max-width: 400px; /* Tamanho padrão de celular */
+            max-width: 400px;
             padding: 40px 20px;
             text-align: center;
             display: flex;
@@ -27,31 +28,24 @@
             align-items: center;
         }
 
-        /* Estilo do Logo */
+        /* Estilo da Foto (Quadrada com cantos arredondados) */
         .logo-img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%; /* Faz ficar redondo */
-            border: 4px solid #ff6600; /* Borda Laranja Forge */
+            width: 150px;
+            height: 150px;
+            border-radius: 15px; 
+            border: 4px solid #ff6600; /* Borda Laranja */
             object-fit: cover;
             margin-bottom: 20px;
-            box-shadow: 0 0 20px rgba(255, 102, 0, 0.3); /* Brilho laranja sutil */
+            box-shadow: 0 0 20px rgba(255, 102, 0, 0.3);
         }
 
         /* Textos */
         h1 {
             font-size: 24px;
             font-weight: bold;
-            margin-bottom: 5px;
+            /* Aumentei a margem aqui para dar espaço antes dos botões, já que removemos o h2 */
+            margin-bottom: 30px; 
             color: #eeeeee;
-        }
-
-        h2 {
-            font-size: 18px;
-            color: #ff6600; /* Laranja da marca */
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         /* Botões */
@@ -60,7 +54,7 @@
             width: 100%;
             padding: 16px;
             margin-bottom: 15px;
-            background-color: #2a2a2a; /* Botão cinza escuro */
+            background-color: #2a2a2a; 
             color: #fff;
             text-decoration: none;
             border-radius: 12px;
@@ -70,17 +64,11 @@
             transition: all 0.2s ease;
         }
 
-        /* Efeito ao passar o mouse ou tocar */
         .btn:hover, .btn:active {
-            background-color: #ff6600; /* Fica laranja ao tocar */
+            background-color: #ff6600; 
             border-color: #ff6600;
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-        }
-
-        /* Botão específico do WhatsApp (Opcional: se quiser verde, mude aqui) */
-        .btn-whatsapp {
-             /* Se quiser verde: background-color: #25D366; */
         }
 
         /* Rodapé */
@@ -100,13 +88,19 @@
 
     <div class="card-container">
         
-        <img src="logo.jpg" alt="Logo Forge W&F 3D" class="logo-img">
+        <img src="cidi.png" alt="Foto Cidinha" class="logo-img">
 
         <h1>Maria Aparecida de Freitas</h1>
-        <h2>Forge W&F 3D</h2>
-
-        <a href="https://wa.me/5512991436963" class="btn btn-whatsapp" target="_blank">
+        <a href="https://wa.me/5512991436963" class="btn" target="_blank">
             Chamar no WhatsApp
+        </a>
+
+        <a href="https://www.instagram.com/maryfreitasblog" class="btn" target="_blank">
+            Instagram
+        </a>
+
+        <a href="mailto:coordmariafreitas@gmail.com" class="btn">
+            Enviar E-mail
         </a>
 
         <a href="https://www.forgewf3d.com" class="btn" target="_blank">
@@ -114,7 +108,7 @@
         </a>
 
         <div class="footer">
-            <p>Jacareí - São Paulo - Brasil</p>
+            <p>São José dos Campos - São Paulo - Brasil</p>
             <p>&copy; 2026 Forge W&F 3D</p>
         </div>
 
